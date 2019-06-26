@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>News</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="stylesheet" href="/style/main.css" />
+  <script src="https://unpkg.com/quicklink@1.0.0/dist/quicklink.umd.js"></script>
+</head>
+<body>
+  <header>
+    <ul class="navbar">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/pages/article1.html">World</a></li>
+      <li><a href="/pages/article2.html">Tech</a></li>
+      <li><a href="/pages/article3.html">Contact</a></li>
+      <li class="profile-icon"><img src="https://cdn.glitch.com/2feb9fb8-169d-4ea0-9d82-ece1d1199861/icon.svg?v=1560086780686" alt="profile icon" /></li>
+    </ul>
+  </header>
+  
+<article>
+  <h1>News</h1>
+  <section>
+    <div class="img-container left column">
+      <img src="https://cdn.glitch.com/2feb9fb8-169d-4ea0-9d82-ece1d1199861/business.jpg?v=1560086774114" alt="A person reading the business section of a newspaper">
+    </div>
+    <div class="right column">
+      <h2 class="headline">Headline</h2>
+      <p class="content">
+        I love cheese, especially manchego swiss. ☺ Fromage queso jarlsberg cheesy
+        feet emmental cottage cheese camembert de normandie bocconcini. Cottage cheese
+        everyone loves cauliflower cheese rubber cheese squirty cheese halloumi cow
+        fondue. Bocconcini cheese and biscuits everyone loves fondue red leicester
+        st. agur blue cheese rubber cheese ricotta. Cheesy grin mozzarella.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class="left column">
+      <h4 class="list-title">Trending Articles</h4>
+      <ul class="vertical-list">
+        <li class="list-item"><a href="pages/article1.html" class="post-link">Article 1</a></li>
+        <li class="list-item"><a href="pages/article2.html" class="post-link">Article 2</a></li>
+        <li class="list-item"><a href="pages/article3.html" class="post-link">Article 3</a></li>
+        <li class="list-item"><a href="pages/article4.html" class="post-link">Article 4</a></li>
+        <li class="list-item"><a href="pages/article-missing.html" class="post-link">Non-existent article</a></li>
+      </ul>
+    </div>
+    <div class="right column">
+      <h4 class="list-title">Archived Posts</h4>
+      <ul class="vertical-list">
+        <li class="list-item"><a href="pages/post1.html" class="post-link">Archived Post 1</a></li>
+        <li class="list-item"><a href="pages/post2.html" class="post-link">Archived Post 2</a></li>
+        <li class="list-item"><a href="pages/post3.html" class="post-link">Archived Post 3</a></li>
+        <li class="list-item"><a href="pages/post-missing.html" class="post-link">Non-existent Post 4</a></li>
+      </ul>
+    </div>
+  </section>
+</article>
+
+  
+  <footer>
+    <a href="#" class="footer-link">Twitter</a>
+    <a href="#" class="footer-link">Facebook</a>
+    <a href="#" class="footer-link">Google+</a>
+    <a href="#" class="footer-link">Digg</a>
+  </footer>
+  <script>
+    window.addEventListener('load', () => {
+        quicklink();
+    });
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').then(registration => {
+          console.log('SW registered: ', registration);
+        }).catch(registrationError => {
+          console.log('SW registration failed: ', registrationError);
+        });
+      });
+    }
+  </script>
+</body>
+</html>
+  
