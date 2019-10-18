@@ -5,7 +5,7 @@
   <title>News</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <link rel="stylesheet" href="/style/main.css" />
-  <script src="https://unpkg.com/quicklink@1.0.0/dist/quicklink.umd.js"></script>
+  <script src="../dist/quicklink.umd.js"></script>
 </head>
 <body>
   <header>
@@ -28,7 +28,7 @@
   </footer>
   <script>
     window.addEventListener('load', () => {
-        quicklink();
+      quicklink.listen();
     });
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
