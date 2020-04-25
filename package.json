@@ -1,5 +1,5 @@
 {
-  "name": "workbox-lab",
+  "name": "quicklink-news-workbox",
   "version": "1.0.0",
   "description": "A demo of using Quicklink and Workbox together",
   "main": "index.js",
@@ -15,7 +15,6 @@
     "del": "^4.1.1",
     "gulp": "^4.0.2",
     "gulp-nunjucks-render": "^2.2.3",
-    "quicklink": "^1.0.0",
     "workbox-build": "^4.3.1"
   }
 }
